@@ -7,104 +7,103 @@
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="">View Music</a></li>
-      <li class="middlenav"><a href="">Add Music</a></li>
-      <li><a href="">Profile</a></li>
-    </ul>
-  </nav>
-  <section class="leftmenu">
-    <form action="">
-      <div class="form">
-        <fieldset>
-            <label for="range">Song length:</label>
-            <input type="range" class="range">
-          <p>Artist:
-          <select placeholder="Options">
-            <option value="">Options</option>
-            <option value="Dawes">Dawes</option>
-            <option value="The Black Keys">The Black Keys</option>
-            <option value="First Aid Kit">First Aid Kit</option>
-            <option value="Bearheart">Bearheart</option>
-          </select></p>
-          <p>Album:
-          <select placeholder="Options">
-            <option value="">Options</option>
-            <option value="Stories Don't End">Stories Don't End</option>
-            <option value="Brothers">Brothers</option>
-            <option value="Stay Gold">Stay Gold</option>
-            <option value="Glass Half Full">Glass Half Full</option>
-          </select></p>
-          <p class="genre">Genre:</p>
-          <div class="left">
-            <label><input type="checkbox"/> Rock</label>
-            <label><input type="checkbox"/> Pop</label>
-            <label><input type="checkbox"/> Blues</label>
-          </div>
-          <div class="right">
-            <label><input type="checkbox"/> Classical</label>
-            <label><input type="checkbox"/> Jazz</label>
-            <label><input type="checkbox"/> Hip Hop</label>
-          </div>
-        </fieldset>
-      </div>
-      <div class="button">
-        <p class="filter">Filter</p>
-      </div>
-    </form>
-  </section>
-
-  <div class="songs">
-    <article>
-      <p class="title">Just My Luck</p>
+  <header>
+    <nav>
       <ul>
-        <li>Dawes</li>
-        <li class="middle">Stories Don't End</li>
-        <li>Americana</li>
+        <li><a href="" id="listMusic">List Music</a></li>
+        <li><a href="" id="addMusic">Add Music</a></li>
       </ul>
-    </article>
-    <article>
-      <p class="title">Everlasting Light</p>
-      <ul>
-        <li>The Black Keys</li>
-        <li class="middle">Brothers</li>
-        <li>Rock</li>
-      </ul>
-    </article>
-    <article>
-      <p class="title">Master Pretender</p>
-      <ul>
-        <li>First Aid Kit</li>
-        <li class="middle">Stay Gold</li>
-        <li>Folk</li>
-      </ul>
-    </article>
-    <article>
-      <p class="title">I Will Rise</p>
-      <ul>
-        <li>Bearheart</li>
-        <li class="middle">Glass Half Full</li>
-        <li>Americana/Folk</li>
-      </ul>
-    </article>
+    </nav>
+  </header>
+  <div id="listSongs">
+    <div class="leftmenu">
+      <form>
+        <div class="form">
+          <fieldset>
+              <label for="range">Song length:</label>
+              <input type="range" class="range">
+            <p>Artist:
+            <select placeholder="Options">
+              <option value="">Options</option>
+              <option value="Dawes">Dawes</option>
+              <option value="The Black Keys">The Black Keys</option>
+              <option value="First Aid Kit">First Aid Kit</option>
+              <option value="Bearheart">Bearheart</option>
+            </select></p>
+            <p>Album:
+            <select placeholder="Options">
+              <option value="">Options</option>
+              <option value="Stories Don't End">Stories Don't End</option>
+              <option value="Brothers">Brothers</option>
+              <option value="Stay Gold">Stay Gold</option>
+              <option value="Glass Half Full">Glass Half Full</option>
+            </select></p>
+            <p class="genre">Genre:</p>
+            <div class="left">
+              <label><input type="checkbox"/> Rock</label>
+              <label><input type="checkbox"/> Pop</label>
+              <label><input type="checkbox"/> Blues</label>
+            </div>
+            <div class="right">
+              <label><input type="checkbox"/> Classical</label>
+              <label><input type="checkbox"/> Jazz</label>
+              <label><input type="checkbox"/> Hip Hop</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="button">
+          <p class="filter">Filter</p>
+        </div>
+      </form>
+    </div>
+    <div class="songs">
+      <article>
+        <p class="title">Just My Luck</p>
+        <ul>
+          <li id="artist">Dawes</li>
+          <li id="album">Stories Don't End</li>
+          <li>Americana</li>
+        </ul>
+      </article>
+      <article>
+        <p class="title">Everlasting Light</p>
+        <ul>
+          <li id="artist">The Black Keys</li>
+          <li id="album">Brothers</li>
+          <li>Rock</li>
+        </ul>
+      </article>
+      <article>
+        <p class="title">Master Pretender</p>
+        <ul>
+          <li id="artist">First Aid Kit</li>
+          <li id="album">Stay Gold</li>
+          <li>Folk</li>
+        </ul>
+      </article>
+      <article>
+        <p class="title">I Will Rise</p>
+        <ul>
+          <li id="artist">Bearheart</li>
+          <li id="album">Glass Half Full</li>
+          <li>Americana/Folk</li>
+        </ul>
+      </article>
+    </div>
   </div>
+ <div id="addsong">
+    <text>Song Name:</text>
+    <input type="text">
+    <br>
+    <text>Artist:</text>
+    <input type="text">
+    <br>
+    <text>Album:</text>
+    <input type="text">
+    <br>
+    <button>Add</button>
+  </div>
+  <script src="music.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

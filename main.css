@@ -9,9 +9,9 @@ nav {
   background-color: #FFB4B0;
   height: 50px;
   border: 2px solid black;
-  text-align: left;
-  margin-bottom: 15px;
+  text-align: right;
   padding-left: 15px;
+  margin-bottom: 15px;
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2); /*added some shadows. hope that's cool*/
 }
 
@@ -20,6 +20,28 @@ nav > ul {
   list-style-type: none;
   margin: 18px 5px 0 -40px;
   display: block;
+}
+
+#addsong {
+  padding-left: 30%;
+  padding-top: 30px;
+}
+
+#addsong > text {
+  width: 80px;
+  display: inline-flex;
+}
+
+#addsong > button {
+  width: 107px;
+  margin-left: 83px;
+  margin-top: 8px;
+}
+
+#addsong > input {
+  display: inline-block;
+  margin-top: 5px;
+  width: 200px;
 }
 
 label {
@@ -36,7 +58,7 @@ label {
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
-.form > fieldset {
+fieldset {
   padding: 15px 10px;
   line-height: 20px;
   border: none;
@@ -101,7 +123,7 @@ article {
   text-transform: none;
 }
 
-.middle {
+#album {
   border-left: 1px solid black;  
   border-right: 1px solid black;
   margin: 0 10px;
@@ -127,5 +149,7 @@ ul {
   margin-bottom: 5px;
 }
 
-
+.hide {
+  display: none; 
+}
 
